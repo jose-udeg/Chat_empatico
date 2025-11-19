@@ -2,17 +2,56 @@
   "intents": [
     {
       "tag": "saludo",
-      "patterns": ["hola", "qué tal", "buenos días", "buenas noches"],
+      "patterns": [
+        "hola",
+        "qué tal",
+        "que tal",
+        "q tal",
+        "buenos días",
+        "buenos dias",
+        "buenas noches",
+        "ola",
+        "oli",
+        "k tal",
+        "Hola",
+        "Hey",
+        "Buenas",
+        "Holi"
+    ],
       "responses": ["¡Hola! ¿Cómo te encuentras en este momento?", "Hola, qué gusto saludarte. Estoy aquí para escucharte."]
     },
     {
       "tag": "tristeza",
-      "patterns": ["estoy triste", "me siento mal", "hoy es un mal día", "no me siento bien", "estoy deprimido"],
+      "patterns": [
+        "estoy triste", 
+        "me siento mal", 
+        "hoy es un mal día", 
+        "no me siento bien", 
+        "estoy deprimido",
+        "me siento muy mal",
+        "estoy desanimado",
+        "me siento muy triste"
+    ],
       "responses": ["Entiendo, permítete sentir eso. ¿Quieres compartir por qué te sientes así?", "Es válido sentirse triste. Te escucho sin juzgar."]
     },
     {
       "tag": "felicidad",
-      "patterns": ["estoy feliz", "todo va genial", "me siento muy bien", "qué buen día"],
+      "patterns": [
+        "estoy feliz", 
+        "todo va genial", 
+        "me siento muy bien", 
+        "qué buen día",
+        "estoy contento",
+        "me siento alegre",
+        "hoy es un gran día",
+        "me siento fantástico",
+        "estoy súper feliz",
+        "me siento increíble",
+        "estoy muy contento",
+        "me siento genial",
+        "hoy me siento muy bien",
+        "Estoy alegre"
+    ],
       "responses": ["¡Me alegra mucho que te sientas así! ¿Qué te hace tan feliz?", "Esa es una gran noticia. Disfruta el momento."]
     },
     {
@@ -22,8 +61,25 @@
     },
     {
       "tag": "despedida",
-      "patterns": ["adiós", "hasta luego", "me voy", "chao"],
+      "patterns": [
+        "adiós", 
+        "hasta luego", 
+        "me voy", 
+        "chao",
+        "adios.", 
+        "adios", 
+        "bye", 
+        "bai", 
+        "nos vemos", 
+        "te dejo", 
+        "me despido", 
+        "hasta la próxima", 
+        "hasta pronto",
+        "mañana nos vemos",
+        "mañana hablamos",
+        "nos hablamos"
+    ],
       "responses": ["Cuídate mucho y recuerda que estaré aquí cuando me necesites.", "Hasta pronto. ¡Que tengas un excelente día!"]
-    }
+    }   
   ]
 }

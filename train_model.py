@@ -72,7 +72,7 @@ with open("data.pickle", "wb") as f:
 
 model = Sequential()
 # Capa Oculta: Usando la función de activación ReLU (REQUISITO CUMPLIDO)
-model.add(Dense(8, input_shape=(len(training[0]),), activation='relu'))
+model.add(Dense(16, input_shape=(len(training[0]),), activation='relu'))
 model.add(Dropout(0.5))
 # Capa de Salida: Usando la función de activación Softmax (REQUISITO CUMPLIDO)
 model.add(Dense(len(output[0]), activation='softmax')) 
@@ -80,7 +80,7 @@ model.add(Dense(len(output[0]), activation='softmax'))
 # Compilación y Entrenamiento
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 print("--- Entrenando Modelo ---")
-history = model.fit(training, output, epochs=200, batch_size=8, verbose=1)
+history = model.fit(training, output, epochs=500, batch_size=8, verbose=1)
 
 # Guardar el modelo entrenado
 model.save("model.h5", history)

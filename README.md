@@ -107,3 +107,8 @@ Una vez que tengas la aplicación funcionando, el siguiente gran paso para tu re
     Si notas que la IA es repetitiva, añade más responses.
 
 Después de cada modificación a intents.json, debes re-ejecutar python train_model.py y luego reiniciar la aplicación Streamlit para que cargue el nuevo modelo mejorado.
+
+Nota adicional:
+    si en dado caso no te permite ejecutar el entorno virtual, digitar como administrador en el powershell el siguiente comando:
+    Recuerda cerrar visual studio antes.
+    Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser

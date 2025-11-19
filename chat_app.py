@@ -62,7 +62,7 @@ def chat(inp):
     
     # Verificar la confianza (si la probabilidad es muy baja, es una respuesta desconocida)
     # 0.70 (70%) es un buen umbral para empezar.
-    if results[results_index] > 0.30:
+    if results[results_index] > 0.80:
         for tg in data['intents']:
             if tg['tag'] == tag:
                 # Seleccionar una respuesta aleatoria de las respuestas definidas para esa Intención
@@ -77,7 +77,7 @@ def chat(inp):
     # --- Configuración de Streamlit ---
 st.set_page_config(page_title="Avanna - Compañero Emocional", layout="wide")
 
-st.title("Avanna 🧘 Compañero Emocional IA")
+st.title("Habla con Avanna")
 st.markdown("Soy Avanna, estoy aquí para escucharte y ayudarte a validar tus sentimientos.")
 
 # Inicializar el historial de chat en el estado de sesión de Streamlit
