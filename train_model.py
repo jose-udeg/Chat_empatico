@@ -3,14 +3,14 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Dropout
-from nltk.stem.lancaster import LancasterStemmer
+from tensorflow.keras.callbacks import EarlyStopping
+from nltk.stem.snowball import SnowballStemmer
 import nltk
 import pickle
 import random
 
-# Inicializar el stemmer (para reducir palabras a su raíz)
-# nltk.download('punkt') # Descomenta y ejecuta si es la primera vez
-stemmer = LancasterStemmer()
+# Inicializar stemmer
+stemmer = SnowballStemmer('spanish')
 
 # --- Cargar y Preparar Datos ---
 with open('intents.json', encoding='utf-8') as file:
@@ -18,12 +18,11 @@ with open('intents.json', encoding='utf-8') as file:
 
 words = []
 labels = []
-docs_x = [] # Patrones
-docs_y = [] # Tags (Intenciones)
+docs_x = []
+docs_y = []
 
 for intent in data['intents']:
     for pattern in intent['patterns']:
-        # Tokenización: Divide la frase en palabras
         wrds = nltk.word_tokenize(pattern, language='spanish')
         words.extend(wrds)
         docs_x.append(wrds)
@@ -32,25 +31,21 @@ for intent in data['intents']:
     if intent['tag'] not in labels:
         labels.append(intent['tag'])
 
-# Stemming y limpieza (pasar a minúsculas, quitar duplicados)
 words = [stemmer.stem(w.lower()) for w in words if w != "?"]
 words = sorted(list(set(words)))
 labels = sorted(labels)
 
-# --- Crear Datos de Entrenamiento (Bag of Words) ---
 training = []
 output = []
-out_empty = [0] * len(labels) # Vector de salida vacío (one-hot encoding)
+out_empty = [0] * len(labels)
 
 for x, doc in enumerate(docs_x):
     bag = []
     wrds = [stemmer.stem(w.lower()) for w in doc]
 
-    # Crear la "Bolsa de Palabras" (Bag of Words)
     for w in words:
         bag.append(1) if w in wrds else bag.append(0)
 
-    # Crear la etiqueta (One-Hot Encoding)
     output_row = list(out_empty)
     output_row[labels.index(docs_y[x])] = 1
 
@@ -60,28 +55,31 @@ for x, doc in enumerate(docs_x):
 training = np.array(training)
 output = np.array(output)
 
-# --- Guardar datos pre-procesados y listas clave ---
 with open("data.pickle", "wb") as f:
     pickle.dump((words, labels, training, output), f)
 
-# --- Construcción del Modelo con Funciones de Activación ---
-
-# Capa de entrada: # de palabras únicas
-# Capas ocultas: 8 neuronas
-# Capa de salida: # de etiquetas únicas
-
+# --- Construcción del Modelo (MEJORADA) ---
 model = Sequential()
-# Capa Oculta: Usando la función de activación ReLU (REQUISITO CUMPLIDO)
-model.add(Dense(16, input_shape=(len(training[0]),), activation='relu'))
+
+# Capa de entrada más grande (128 neuronas) para captar mejor los patrones
+model.add(Dense(128, input_shape=(len(training[0]),), activation='relu'))
 model.add(Dropout(0.5))
-# Capa de Salida: Usando la función de activación Softmax (REQUISITO CUMPLIDO)
-model.add(Dense(len(output[0]), activation='softmax')) 
 
-# Compilación y Entrenamiento
+# Capa intermedia de refuerzo (64 neuronas)
+model.add(Dense(64, activation='relu'))
+model.add(Dropout(0.5))
+
+# Capa de salida
+model.add(Dense(len(output[0]), activation='softmax'))
+
+# Compilación
 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-print("--- Entrenando Modelo ---")
-history = model.fit(training, output, epochs=500, batch_size=8, verbose=1)
 
-# Guardar el modelo entrenado
+# EarlyStopping con un poco más de paciencia
+callback = EarlyStopping(monitor='accuracy', patience=50, restore_best_weights=True)
+
+print("--- Entrenando Modelo Potenciado ---")
+history = model.fit(training, output, epochs=500, batch_size=5, verbose=1, callbacks=[callback])
+
 model.save("model.h5", history)
-print("--- Modelo entrenado y guardado en model.h5 ---")
+print("--- Modelo guardado correctamente ---")
