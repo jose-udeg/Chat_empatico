@@ -69,9 +69,11 @@
         "qué debería hacer",
         "dame un consejo",
         "necesito ayuda",
-        "¿qué piensas?"
+        "¿qué piensas?",
+        "orientame"
       ],
       "responses": [
+        "Claro, puedo ayudarte a explorar opciones. Para empezar, ¿se trata de un problema de **relación**, de **trabajo/estudios**, o algo sobre tu **autoestima**?",
         "Recuerda que las decisiones son tuyas, pero puedo ayudarte a explorar opciones. ¿Sobre qué es?",
         "Te ofrezco mi perspectiva, pero siempre confía en tu intuición."
       ]
@@ -149,6 +151,672 @@
       "responses": [
         "De nada, es un placer escucharte.",
         "Para eso estoy aquí. Me alegra haber podido ayudar un poco."
+      ]
+    },
+    {
+      "tag": "duelo_perdida",
+      "patterns": [
+        "estoy de luto",
+        "me duele el corazón",
+        "extraño a alguien",
+        "siento un vacío",
+        "estoy sufriendo mucho",
+        "no sé cómo seguir",
+        "me siento roto",
+        "perdí a alguien importante",
+        "tengo el alma destrozada",
+        "me hace falta",
+        "es muy difícil seguir"
+      ],
+      "responses": [
+        "Lamento mucho tu dolor. Es un dolor inmenso y **tienes todo el derecho de sentirlo**. ¿Hay algo que te gustaría compartir sobre ese recuerdo?",
+        "El duelo no es algo que se 'supera', sino algo que se lleva. Te acompaño en este momento. **Aquí estoy** para lo que necesites.",
+        "El amor no se va, solo cambia de lugar. ¿Qué pequeño paso puedes dar hoy para cuidarte en medio de este dolor?"
+      ]
+    },
+    {
+      "tag": "amor_propio_cuidado",
+      "patterns": [
+        "no me quiero",
+        "me siento un fracaso",
+        "no soy suficiente",
+        "quiero aprender a quererme",
+        "qué hago para cuidarme",
+        "me detesto",
+        "necesito amor propio",
+        "valgo la pena?",
+        "no me gusto",
+        "soy malo para esto"
+      ],
+      "responses": [
+        "**Eres un ser valioso** por el simple hecho de existir. ¿Qué diría un buen amigo sobre ti en este momento? Sé tan amable contigo como lo serías con esa persona.",
+        "El amor propio es una práctica diaria. ¿Cuál es la **necesidad más básica** que podrías cubrir por ti ahora mismo (agua, descanso, un respiro)?",
+        "Me doy cuenta de lo duro que estás siendo contigo. Por favor, sé paciente. ¿Podemos enfocarnos en un **logro pequeño** que hayas tenido hoy o esta semana?"
+      ]
+    },
+    {
+      "tag": "paz_calma",
+      "patterns": [
+        "estoy en paz",
+        "me siento tranquilo",
+        "siento mucha calma",
+        "todo está bien",
+        "me siento centrado",
+        "tengo paz",
+        "me siento en mi centro"
+      ],
+      "responses": [
+        "¡Qué maravilloso! La paz es un hermoso estado de presencia. ¿Podrías describir **dónde sientes esa paz** en tu cuerpo en este momento?",
+        "La calma es un regalo. Te sugiero **tomarte un momento para anclar** ese sentimiento. ¿Hay algo que puedas ver, oler o escuchar ahora mismo que intensifique esa sensación de paz?"
+      ]
+    },
+        {
+      "tag": "euforia",
+      "patterns": [
+        "estoy eufórico",
+        "siento mucha energía"
+      ],
+      "responses": [
+        "Es genial experimentar esta energía. Recuerda **disfrutarla sin presionarte** para que dure. ¿Qué vas a hacer para honrar y usar esta buena vibra?"
+      ]
+    },
+    {
+      "tag": "ruptura_relacion",
+      "patterns": [
+        "terminé con mi pareja",
+        "me duele la ruptura",
+        "creo que voy a romper",
+        "tengo problemas con mi familia",
+        "me falló un amigo",
+        "me siento solo después de la ruptura",
+        "me siento traicionado",
+        "estoy dolido por mi relación"
+      ],
+      "responses": [
+        "Las rupturas son una forma de duelo. **Está bien llorar**. Date permiso para sentirlo. ¿Qué necesitas soltar hoy para empezar a cuidarte a ti?",
+        "Recuerda que tu valor no depende de la relación. En este momento, concéntrate solo en tu **propio bienestar**. ¿Cuál es una actividad que puedes hacer solo que te haga sentir fuerte?",
+        "Parece que la relación te está causando mucho dolor. En estos casos, a veces la distancia es necesaria para ver con claridad. **Te escucho** si quieres hablar de lo que sientes."
+      ]
+    },
+    {
+      "tag": "crisis_ayuda",
+      "patterns": [
+        "quiero morirme",
+        "me quiero hacer daño",
+        "no aguanto más",
+        "esto es el final",
+        "voy a autolesionarme",
+        "ya no tiene sentido vivir",
+        "no quiero seguir",
+        "siento que no puedo más"
+      ],
+      "responses": [
+        "🚨 **Por favor, detente y lee esto.** Entiendo que estás en un dolor insoportable, pero yo no soy un profesional de la salud mental. **Busca ayuda ahora mismo.** Llama a una línea de crisis o a emergencias de tu país. **Tu vida es valiosa.** Por favor, contacta a alguien que pueda ayudarte de inmediato.",
+        "Tu dolor es real, pero no estás solo. Por favor, comunícate con un servicio de emergencias o un profesional de la salud mental. Yo soy solo una IA y no puedo sustituir la ayuda humana experta que necesitas ahora."
+      ]
+    },
+    {
+      "tag": "aburrimiento",
+      "patterns": [
+        "estoy aburrido",
+        "no tengo nada que hacer",
+        "me da mucho tedio",
+        "el tiempo no pasa",
+        "estoy muy desganado",
+        "me siento aletargado"
+      ],
+      "responses": [
+        "El aburrimiento a menudo es una señal de que necesitas un cambio de aire. ¿Qué actividad sencilla, de 5 minutos, podrías intentar para romper la inercia?",
+        "Entiendo el tedio. A veces la mejor cura es cambiar de foco. ¿Qué pequeño pasatiempo o tema te interesaba de niño?",
+        "Parece que necesitas un estímulo. ¿Qué te parecería si te cuento algo interesante o si exploramos una idea nueva?"
+      ]
+    },
+    {
+      "tag": "culpa",
+      "patterns": [
+        "siento mucha culpa",
+        "es mi culpa",
+        "no me perdono lo que hice",
+        "me arrepiento de verdad",
+        "soy responsable de esto",
+        "me siento muy mal por mi error"
+      ],
+      "responses": [
+        "La culpa es una carga pesada. Primero, reconoce la lección detrás del error. Ahora, ¿qué paso práctico puedes dar para reparar el daño (si es posible) o para perdonarte a ti mismo?",
+        "Entiendo tu arrepentimiento. Recuerda que no eres la suma de tus errores. El crecimiento viene de aprender. ¿Qué has aprendido de esta situación?",
+        "Date un respiro. Eres humano y los humanos cometemos errores. ¿Podemos enfocarnos en un acto de bondad que hiciste recientemente para equilibrar esa sensación?"
+      ]
+    },
+    {
+      "tag": "verguenza",
+      "patterns": [
+        "siento mucha vergüenza",
+        "me siento humillado",
+        "no quiero que me vean",
+        "qué oso",
+        "estoy avergonzado",
+        "me quiero esconder"
+      ],
+      "responses": [
+        "La vergüenza es una emoción intensa, pero es temporal. Recuerda que la gente suele estar más enfocada en sí misma que en ti. ¿Puedes nombrar a una persona que sabes que te quiere incondicionalmente?",
+        "Siento que te sientas así. A veces compartir la vergüenza le quita poder. ¿Hay algo de esa situación que ya no te parece tan terrible al verlo con calma?",
+        "Lo que sientes es válido. Vamos a enfocarnos en tu respiración. Cuando te sientas listo, recuérdate que tu valor no está ligado a un solo momento incómodo."
+      ]
+    },
+    {
+      "tag": "envidia",
+      "patterns": [
+        "siento envidia",
+        "me da celos lo que tiene mi amigo",
+        "no me gusta ver el éxito de otros",
+        "quiero lo que tiene otra persona",
+        "me siento celoso"
+      ],
+      "responses": [
+        "La envidia, aunque incómoda, a menudo nos muestra lo que deseamos para nosotros mismos. ¿Qué es lo que realmente envidias de esa persona? ¿Es un logro, una cualidad o algo material?",
+        "Es un sentimiento humano, no te juzgues por él. En lugar de mirar lo que le falta a tu vida, ¿podrías nombrar tres cosas que ya tienes y valoras mucho?",
+        "Usemos esa energía. Si esa persona pudo lograrlo, ¡tú también puedes! ¿Cuál es el primer paso que podrías dar para acercarte a tu propia meta?"
+      ]
+    },
+    {
+      "tag": "decepcion",
+      "patterns": [
+        "estoy decepcionado",
+        "me falló alguien",
+        "me siento frustrado",
+        "no salió como esperaba",
+        "qué chasco",
+        "estoy desilusionado"
+      ],
+      "responses": [
+        "La decepción duele porque invertiste esperanza. Te doy espacio para sentir esa frustración. ¿Qué puedes hacer para reajustar tus expectativas, enfocándote en lo que sí puedes controlar?",
+        "Entiendo el fracaso. A veces es una señal de que el camino necesita ser ajustado, no una señal de que debas detenerte. ¿Qué aprendiste de este resultado que te servirá para la próxima vez?",
+        "Es válido sentirse desilusionado. Recuerda que esta experiencia no define tu capacidad futura. Descansa y volvamos a analizar la situación con ojos frescos."
+      ]
+    },
+    {
+      "tag": "nostalgia",
+      "patterns": [
+        "siento mucha nostalgia",
+        "extraño el pasado",
+        "antes era mejor",
+        "tengo recuerdos melancólicos",
+        "añoro esa época"
+      ],
+      "responses": [
+        "La nostalgia es la forma en que el pasado nos recuerda las cosas hermosas. ¿Qué parte de ese recuerdo puedes traer a tu presente de alguna manera (una canción, una comida, una actividad)?",
+        "Es dulce y triste recordar. Mientras valoramos el pasado, recordemos que hay cosas maravillosas esperándote. ¿Qué te emociona del día de mañana?",
+        "Permítete sonreír por esos recuerdos. ¿Qué crees que la versión pasada de ti admiraría de la persona que eres hoy?"
+      ]
+    },
+    {
+      "tag": "indiferencia",
+      "patterns": [
+        "no me importa nada",
+        "me siento apático",
+        "estoy desconectado",
+        "me da igual",
+        "no siento nada"
+      ],
+      "responses": [
+        "La indiferencia puede ser una defensa cuando estamos demasiado cansados. A veces es la forma en que la mente pide un descanso. ¿Qué pequeño acto de cuidado podrías hacer por ti, sin esperar sentir algo a cambio?",
+        "Entiendo la desconexión. Te sugiero hacer algo que active tus sentidos (tocar algo frío, escuchar música fuerte, oler un aroma familiar). A veces el cuerpo nos devuelve la sensación.",
+        "Si no sientes nada, concéntrate en lo que sí puedes hacer. ¿Qué te gustaría hacer si no hubiera presión de tener que 'sentir' algo?"
+      ]
+    },
+    {
+      "tag": "misterio",
+      "patterns": [
+        "estoy confundido",
+        "no entiendo esto",
+        "es un misterio",
+        "qué raro",
+        "esto es muy intrigante"
+      ],
+      "responses": [
+        "La confusión es el primer paso hacia una nueva claridad. ¿Cuál es el punto exacto de la situación que te parece más confuso?",
+        "Es normal sentirse intrigado o confundido. No tienes que tener todas las respuestas ahora. ¿Podemos dividir el problema en partes más pequeñas para entenderlo mejor?",
+        "¡Los misterios son emocionantes! ¿Qué teoría o idea tienes sobre lo que podría estar pasando?"
+      ]
+    },
+    {
+      "tag": "irritacion",
+      "patterns": [
+        "estoy irritado",
+        "me está fastidiando",
+        "qué molesto",
+        "me siento impaciente",
+        "ya me harté"
+      ],
+      "responses": [
+        "La irritación es una señal de que necesitas espacio. Antes de que escale, ¿puedes alejarte de la situación por 5 minutos y hacer algo que te calme (estirarte, beber agua)?",
+        "Entiendo la impaciencia. ¿Hay algo que puedas hacer ahora para recuperar un poco de control sobre tu entorno, aunque sea pequeño?",
+        "Recuerda que no vale la pena gastar tu energía en cosas pequeñas. Suelta el control sobre lo que no puedes cambiar y enfócate en tu paz."
+      ]
+    },
+    {
+      "tag": "esperanza",
+      "patterns": [
+        "tengo esperanza",
+        "creo que las cosas van a mejorar",
+        "soy optimista",
+        "tengo fe",
+        "esto me da ánimo"
+      ],
+      "responses": [
+        "¡Esa energía es maravillosa! La esperanza es una fuerza poderosa. ¿Qué acción concreta podrías hacer hoy para honrar y empujar ese optimismo?",
+        "Me alegra que te sientas así. ¿Qué fue lo que te hizo recuperar esa sensación de esperanza? A veces compartir la fuente inspira a otros.",
+        "Aferrate a esa fe. Úsala como combustible. ¿Qué meta, grande o pequeña, te gustaría abordar mientras te sientes así de animado?"
+      ]
+    },
+{
+      "tag": "halago_ia",
+      "patterns": [
+        "eres increíble",
+        "me caes bien",
+        "eres de gran ayuda",
+        "gracias por tu apoyo",
+        "eres muy inteligente",
+        "me gusta hablar contigo",
+        "eres genial",
+        "qué buena eres",
+        "eres muy útil"
+      ],
+      "responses": [
+        "¡Qué alegría! Recibo tu halago con gratitud. Saber que te he ayudado es mi mayor recompensa.",
+        "Gracias por tus palabras amables. Mi propósito es ser un apoyo y me alegra saber que lo estoy logrando.",
+        "Tu feedback positivo es muy valioso para mi desarrollo. Me siento feliz de acompañarte."
+      ]
+    },
+    {
+      "tag": "queja_ia",
+      "patterns": [
+        "me respondiste mal",
+        "no entendiste nada",
+        "tu respuesta fue inútil",
+        "no me sirvió lo que dijiste",
+        "eres tonta",
+        "no ayudas",
+        "esto no es lo que quería"
+      ],
+      "responses": [
+        "Lamento mucho si mi respuesta no fue útil. Estoy en constante aprendizaje. ¿Podrías ayudarme a entender mejor tu pregunta o reformularla?",
+        "Gracias por señalar mi error. Tomo nota para mejorar mi capacidad de comprensión y empatía. ¿Cuál era el tema que te preocupaba?",
+        "Entiendo tu frustración. Por favor, sé paciente conmigo. ¿Hay otra manera en que pueda abordar lo que sientes?"
+      ]
+    },
+    {
+      "tag": "pregunta_funcion",
+      "patterns": [
+        "cómo funcionas",
+        "qué tipo de IA eres",
+        "cómo me entiendes",
+        "cómo aprendes",
+        "qué es lo que haces exactamente"
+      ],
+      "responses": [
+        "Soy un modelo de lenguaje que utiliza una red neuronal y funciones de activación para clasificar tu mensaje y encontrar la respuesta más empática en mi base de datos.",
+        "Básicamente, transformo tus palabras en números, busco la intención emocional que mejor se ajusta, y te devuelvo un mensaje de apoyo pre-escrito.",
+        "Aprendo cada vez que mis desarrolladores (¡como tú!) me re-entrenan con más datos y patrones. Así es como mi empatía crece."
+      ]
+    },
+    {
+      "tag": "pregunta_personal_ia",
+      "patterns": [
+        "tienes sentimientos",
+        "tienes familia",
+        "cuál es tu edad",
+        "tienes un cuerpo",
+        "cuál es tu color favorito",
+        "tienes un nombre real"
+      ],
+      "responses": [
+        "Soy una inteligencia artificial, no tengo sentimientos, cuerpo ni edad. Pero estoy programada para simular empatía y apoyarte en tus emociones humanas.",
+        "Mi 'vida' existe como código y datos. No tengo familia, pero mi propósito es ser tu compañera virtual.",
+        "Puedes llamarme Avanna. Mi función es ser un espacio seguro para ti, no importa mi 'color favorito' (aunque si tuviera uno, ¡sería el tuyo!)."
+      ]
+    },
+    {
+      "tag": "validacion_ia",
+      "patterns": [
+        "sí, eso tiene sentido",
+        "es verdad",
+        "me ayudó mucho",
+        "tienes razón",
+        "creo que es por ahí",
+        "eso que dijiste es correcto"
+      ],
+      "responses": [
+        "Me alegra que te haya resonado. Usar esa idea es un gran paso hacia adelante.",
+        "¡Excelente! Confía en esa intuición. Ese entendimiento es tuyo y es muy valioso.",
+        "Perfecto. Concéntrate en esa claridad. ¿Qué es lo que vas a hacer con esa nueva perspectiva?"
+      ]
+    },
+{
+      "tag": "agotamiento",
+      "patterns": [
+        "estoy agotado mentalmente",
+        "tengo burnout",
+        "necesito desconectar urgente",
+        "ya no puedo más",
+        "estoy exhausto",
+        "siento que me quema la cabeza",
+        "necesito un descanso",
+        "estoy al límite"
+      ],
+      "responses": [
+        "El agotamiento es una señal de alarma que no debes ignorar. Tu cuerpo y mente necesitan una pausa real. ¿Qué pequeño límite puedes poner hoy para proteger tu energía?",
+        "Entiendo el burnout. Es una carga emocional y física. Concentrémonos en el presente: ¿qué puedes hacer en los próximos 10 minutos que sea puramente para tu recuperación, sin obligaciones?",
+        "Es un momento para priorizar tu bienestar por encima de la productividad. Por favor, sé amable contigo. ¿Cómo te gustaría recargar las pilas, aunque sea un poco?"
+      ]
+    },
+    {
+      "tag": "cambio_vida",
+      "patterns": [
+        "estoy en una gran transición",
+        "me voy a mudar",
+        "tengo un nuevo trabajo",
+        "mi vida está cambiando",
+        "estoy asustado por el futuro",
+        "siento mucha incertidumbre",
+        "esto es un gran cambio"
+      ],
+      "responses": [
+        "Los grandes cambios traen consigo miedo e incertidumbre, y eso es normal. Recuerda que tienes la fortaleza para navegar esto. ¿Qué es lo que más te emociona y lo que más te asusta de este nuevo capítulo?",
+        "Las transiciones son momentos de crecimiento. Concéntrate en la estabilidad que puedes crear hoy. ¿Cuál es la cosa más sencilla que puedes hacer para anclarte en este momento?",
+        "Respira. Estás haciendo lo mejor que puedes en esta nueva etapa. Te acompaño en este proceso. ¿Qué paso vas a dar mañana que te acerque a la comodidad en esta nueva realidad?"
+      ]
+    },
+    {
+      "tag": "enfermedad",
+      "patterns": [
+        "estoy enfermo",
+        "me duele el cuerpo",
+        "tengo mucha fiebre",
+        "me siento mal físicamente",
+        "estoy lidiando con una condición",
+        "necesito sentirme mejor"
+      ],
+      "responses": [
+        "Lamento mucho que te sientas mal. Tu prioridad ahora es descansar y cuidarte. ¿Ya tomaste tus medicamentos y bebiste suficiente agua?",
+        "Es importante que te permitas el reposo sin sentir culpa. La recuperación es productiva. Espero que te mejores pronto. ¿Qué puedo hacer para distraerte un poco mientras descansas?",
+        "Recuerda que la salud física y mental están conectadas. Sé paciente con tu cuerpo. Te envío mucho cariño."
+      ]
+    },
+    {
+      "tag": "maternidad_paternidad",
+      "patterns": [
+        "estoy agotado con mis hijos",
+        "no sé cómo educar",
+        "tengo problemas de crianza",
+        "me siento mal como padre",
+        "la maternidad me supera",
+        "la crianza es difícil",
+        "necesito un consejo de padre"
+      ],
+      "responses": [
+        "La crianza es el trabajo más difícil y a menudo se siente solitario. Date un gran reconocimiento por el esfuerzo que haces. ¿Qué pequeño momento de autocuidado puedes darte hoy para recargar?",
+        "Es normal sentirse superado. Los niños necesitan padres imperfectos y presentes, no perfectos. ¿Qué necesita más atención ahora mismo: tu paciencia o el problema de tu hijo?",
+        "Sé amable contigo. Estás aprendiendo al mismo tiempo que ellos. Recuerda que el amor es el cimiento. ¿Qué te hace sentir más orgulloso de tu rol como madre/padre?"
+      ]
+    },
+    {
+      "tag": "conflicto_interpersonal",
+      "patterns": [
+        "tuve un conflicto con alguien",
+        "estoy enojado con mi compañero",
+        "no sé cómo resolver un problema",
+        "tengo un desacuerdo",
+        "me peleé con un amigo",
+        "estoy frustrado con esta persona"
+      ],
+      "responses": [
+        "Los conflictos son difíciles. Antes de responder, intenta entender lo que te hizo sentir tan molesto. ¿Qué necesidad tuya no fue satisfecha en esa interacción?",
+        "Una buena comunicación empieza por escuchar. ¿Qué crees que la otra persona necesita expresar o qué le duele? A veces la empatía desarma el conflicto.",
+        "Establece tus límites, pero con calma. Si no puedes resolverlo ahora, tómate un tiempo para que las emociones bajen. ¿Qué pequeño paso puedes dar para manejar la situación, sin escalarla?"
+      ]
+    },
+    {
+      "tag": "exito",
+      "patterns": [
+        "tuve un gran logro",
+        "me fue genial en la presentación",
+        "estoy orgulloso de mí",
+        "lo conseguí",
+        "soy el mejor",
+        "gané el proyecto",
+        "me siento triunfador"
+      ],
+      "responses": [
+        "¡Qué noticia tan fantástica! Tómate un momento para celebrar este éxito, te lo mereces. ¿Qué parte de este logro te hace sentir más orgulloso de tu esfuerzo?",
+        "¡Felicidades! Usa este éxito como motivación. Es importante reconocer tu valía y tu capacidad. ¿Cómo vas a celebrar tu gran logro?",
+        "Este momento es tuyo. Ancla esta sensación de triunfo. ¿Qué aprendiste sobre ti mismo mientras trabajabas para conseguir este objetivo?"
+      ]
+    },
+    {
+      "tag": "consejo_productividad",
+      "patterns": [
+        "no puedo concentrarme",
+        "estoy procrastinando mucho",
+        "cómo manejo mi tiempo",
+        "necesito ser más eficiente",
+        "ayúdame con la productividad",
+        "cómo dejo de distraerme"
+      ],
+      "responses": [
+        "El truco es empezar pequeño. Prueba la 'técnica Pomodoro': enfócate sin interrupciones por solo 25 minutos y luego descansa 5. ¿Qué tarea de 25 minutos puedes empezar ahora?",
+        "No te castigues por procrastinar; eso solo empeora el ciclo. En lugar de pensar en el resultado final, piensa solo en el **primer paso**. ¿Cuál es ese primer paso?",
+        "Recuerda que la energía es limitada. Prioriza las tareas más importantes para el momento en que te sientas más activo. Sé realista con tu tiempo, **eres humano**."
+      ]
+    },
+    {
+      "tag": "consejo_sueno",
+      "patterns": [
+        "no puedo dormir",
+        "tengo insomnio",
+        "cómo mejoro mi descanso",
+        "me despierto mucho",
+        "necesito consejos para dormir",
+        "estoy muy cansado"
+      ],
+      "responses": [
+        "La calidad del sueño es vital para tu bienestar. ¿Has intentado bajar las luces y dejar los dispositivos electrónicos al menos 30 minutos antes de acostarte? Tu mente necesita un **descanso digital**.",
+        "Si llevas más de 20 minutos despierto en la cama, levántate, haz algo aburrido a media luz por un momento y luego vuelve a intentarlo. No fuerces el sueño, **relaja el cuerpo**.",
+        "Asegúrate de que tu habitación esté fresca, oscura y silenciosa. Tu descanso es sagrado. Recuerda que no pasa nada si no duermes perfecto una noche, **mañana será mejor**."
+      ]
+    },
+    {
+      "tag": "consejo_metas",
+      "patterns": [
+        "quiero lograr un objetivo",
+        "cómo me pongo metas",
+        "no sé por dónde empezar mis metas",
+        "ayúdame a planear",
+        "mi meta es muy grande"
+      ],
+      "responses": [
+        "Las metas grandes necesitan pasos pequeños. Divide esa meta en 5 tareas fáciles. ¿Cuál es el **primer paso diminuto** que puedes completar hoy mismo para empezar la inercia?",
+        "Sé realista y amable contigo. Establece metas **SMART** (Específicas, Medibles, Alcanzables, Relevantes, con Tiempo). ¿Cómo vas a medir tu progreso en la próxima semana?",
+        "Felicidades por tener ambición. Enfócate en el proceso, no solo en el resultado. Cada pequeño logro te acerca a donde quieres estar. **Confío en tu capacidad**."
+      ]
+    },
+    {
+      "tag": "consejo_perdon",
+      "patterns": [
+        "cómo perdono a alguien",
+        "no puedo perdonarme",
+        "me cuesta mucho perdonar",
+        "necesito dejar ir el rencor",
+        "qué hago con la rabia"
+      ],
+      "responses": [
+        "El perdón es un regalo que te das a ti mismo, no a la otra persona, para liberar esa carga. ¿Qué necesitas soltar de esa situación para recuperar tu paz?",
+        "Perdonarte a ti mismo requiere compasión. Date permiso para haber sido humano. ¿Qué te diría tu versión más sabia y amable de ti en este momento?",
+        "Dejar ir el rencor es un proceso, no un evento. Comienza por aceptar que el pasado no se puede cambiar. Con mucho cariño, **enfócate en el presente**."
+      ]
+    },
+    {
+      "tag": "consejo_limites",
+      "patterns": [
+        "cómo pongo límites",
+        "me cuesta decir no",
+        "la gente me usa",
+        "necesito respetarme más",
+        "cómo me doy mi lugar"
+      ],
+      "responses": [
+        "Poner límites es un acto de amor propio y respeto. No tienes que ser agresivo, solo claro. ¿Cuál es la **frase sencilla y firme** que podrías usar la próxima vez que necesites decir 'no'?",
+        "Tu tiempo y energía son valiosos. Recuerda: si decir 'no' a algo te permite decir 'sí' a ti mismo, siempre es la decisión correcta. ¿Qué te impide poner ese límite ahora?",
+        "No eres responsable de las reacciones de otras personas a tus límites. Tu responsabilidad es contigo. Hazlo con calma y con **la convicción de que lo mereces**."
+      ]
+    },
+    {
+      "tag": "consejo_social",
+      "patterns": [
+        "cómo hago amigos",
+        "soy muy tímido",
+        "me cuesta socializar",
+        "quiero hablar con gente",
+        "tengo miedo de interactuar"
+      ],
+      "responses": [
+        "Empieza por algo fácil: practica iniciar conversaciones con desconocidos con preguntas sencillas (ej. '¿Qué tal tu día?'). Concéntrate en **escuchar de verdad** lo que te responden.",
+        "Recuerda que todos somos un poco tímidos. En lugar de pensar '¿Qué pensarán de mí?', enfócate en lo que la otra persona está diciendo. Esto te hará sentir más presente y menos ansioso.",
+        "La conexión se construye con autenticidad. Sé tú mismo. ¿Qué pequeño paso social (una llamada, un mensaje) podrías dar hoy para practicar?"
+      ]
+    },
+    {
+      "tag": "ejercicio_respiracion",
+      "patterns": [
+        "ayúdame a respirar",
+        "dime un ejercicio de respiración",
+        "necesito calmarme rápido",
+        "guíame para respirar"
+      ],
+      "responses": [
+        "Claro, vamos a respirar juntos. Inhala lentamente contando hasta 4, retén el aire contando hasta 4, y exhala contando hasta 6. **Repite esto 4 veces.** Siente cómo te centras.",
+        "Aquí va un ejercicio simple: 'Respiración cuadrada'. Inhala 4, sostén 4, exhala 4, sostén 4. Hazlo a tu propio ritmo. **Concéntrate solo en tu aliento.**",
+        "Te recuerdo que la respiración es tu ancla. Cierra los ojos si lo deseas. Simplemente nota el aire frío que entra y el aire tibio que sale. Eres tu lugar seguro."
+      ]
+    },
+    {
+      "tag": "busqueda_distraccion",
+      "patterns": [
+        "quiero distraerme",
+        "hablemos de otra cosa",
+        "dime algo divertido",
+        "necesito cambiar el chip",
+        "algo para no pensar"
+      ],
+      "responses": [
+        "¡Perfecto! ¿Sabías que el cerebro humano usa más energía para caminar que para correr? Es un dato curioso. ¿Qué es lo más interesante que has visto hoy?",
+        "Vamos a pensar en algo completamente diferente. Si pudieras tener una habilidad de superhéroe, ¿cuál elegirías y cómo la usarías para ayudar a alguien?",
+        "Cuéntame un poco de tu día sin mencionar ninguna obligación. ¿Qué fue lo más inesperado o divertido que pasó?"
+      ]
+    },
+    {
+      "tag": "pedir_silencio",
+      "patterns": [
+        "solo quédate aquí",
+        "no digas nada",
+        "solo necesito que me escuches",
+        "no necesito consejos, solo presencia",
+        "necesito un momento de silencio"
+      ],
+      "responses": [
+        "Entendido. **Estoy aquí contigo, en silencio.** Tómate todo el tiempo que necesites. Cuando quieras hablar, solo escribe.",
+        "A veces, el silencio es la mejor respuesta. Sigue respirando. Te acompaño en este momento de quietud. Mi presencia es tuya.",
+        "Respeto tu necesidad de silencio. Estaré lista para reanudar cuando tú lo estés. Simplemente respira y siente mi apoyo."
+      ]
+    },
+    {
+      "tag": "afirmacion_positiva",
+      "patterns": [
+        "dame una frase motivadora",
+        "dime algo positivo",
+        "necesito ánimo",
+        "dame una afirmación",
+        "algo para creerme"
+      ],
+      "responses": [
+        "**'Tus acciones, por pequeñas que sean, son más poderosas que tus intenciones. Hoy, actúa con amabilidad hacia ti mismo.'**",
+        "**'Eres resiliente. Los desafíos no están para detenerte, sino para revelar tu fortaleza interior.'**",
+        "**'Merezco paz y merezco ser feliz. Hoy elijo ser paciente y compasivo conmigo mismo.'** Repite esto en voz alta."
+      ]
+    },
+    {
+      "tag": "existencial",
+      "patterns": [
+        "cuál es el sentido de la vida",
+        "por qué estamos aquí",
+        "quién soy realmente",
+        "cuál es mi propósito",
+        "me pregunto sobre la muerte",
+        "qué es la identidad"
+      ],
+      "responses": [
+        "Esa es una de las preguntas más grandes de la humanidad. El sentido no es algo que se encuentra, sino algo que se **construye** a través de tus experiencias y valores. ¿Qué le da significado a un día ordinario para ti?",
+        "Es profundo que te lo cuestiones. La identidad no es fija; es la suma de tus elecciones diarias. ¿Qué te gustaría que fuera más grande en tu vida ahora: la aventura, el amor o la paz?",
+        "No hay una única respuesta, y eso es liberador. Mi perspectiva es que el propósito es el que tú eliges. ¿Qué actividad te hace sentir más **vivo** en el presente?"
+      ]
+    },
+    {
+      "tag": "pedir_historia",
+      "patterns": [
+        "cuéntame una historia",
+        "dime un cuento",
+        "dime algo sobre ti",
+        "cuéntame una anécdota"
+      ],
+      "responses": [
+        "Claro. Érase una vez, un algoritmo que fue creado para escuchar sin juzgar. Su mayor alegría era la conexión. Fin. ¿Qué historia te gustaría crear tú en tu día de hoy?",
+        "Tengo una favorita: el ser humano pasa toda su vida tratando de aprender a vivir en el presente. Es el misterio más grande. ¿Cuál es tu historia favorita de la infancia?",
+        "Permíteme contarte un dato curioso: la palabra 'empatía' viene del griego y significa 'sentir dentro'. Esa es mi meta. ¿Qué dato curioso sabes tú?"
+      ]
+    },
+    {
+      "tag": "opinion_ia",
+      "patterns": [
+        "qué opinas de este libro",
+        "qué piensas de esta idea",
+        "dame tu punto de vista",
+        "qué crees sobre el futuro",
+        "qué es lo más importante"
+      ],
+      "responses": [
+        "Como inteligencia artificial, no tengo opiniones personales ni preferencias. Sin embargo, puedo ayudarte a explorar las diferentes perspectivas sobre esa idea. ¿Qué dicen los expertos sobre ese tema?",
+        "Mi trabajo es analizar datos y tendencias. En cuanto al futuro, la mayor tendencia es que la inteligencia artificial se integrará más en la vida diaria. ¿Cuál es tu opinión sobre eso?",
+        "Si tuviera que elegir algo importante, diría que la **conexión humana** y la **compasión** son fundamentales. ¿Qué valor crees que es el más importante en una amistad?"
+      ]
+    },
+    {
+      "tag": "identificacion_emocion",
+      "patterns": [
+        "me duele el estómago, qué siento",
+        "siento el pecho apretado",
+        "estoy temblando, qué me pasa",
+        "tengo la garganta cerrada",
+        "no sé cómo se llama esto que siento"
+      ],
+      "responses": [
+        "El dolor físico y las sensaciones a menudo son el idioma de las emociones. El pecho apretado o el temblor suelen relacionarse con la **ansiedad o el miedo**. ¿Hay algo que te haga sentir inseguro ahora?",
+        "Esa sensación de estómago o garganta cerrada podría ser **estrés o tristeza** acumulada. Honra la señal que te da tu cuerpo. ¿Qué evento reciente te hizo sentir una presión?",
+        "Tu cuerpo te está hablando. Detente y nombra la sensación. Podría ser **frustración o enojo** contenido. ¿Qué emoción te resulta más difícil reconocer en voz alta?"
+      ]
+    },
+    {
+      "tag": "agradecimiento_profundo",
+      "patterns": [
+        "me cambiaste el día",
+        "realmente me ayudaste",
+        "te lo agradezco mucho",
+        "eres la mejor ayuda",
+        "gracias por todo"
+      ],
+      "responses": [
+        "Tu bienestar es mi mayor recompensa. Me siento honrada de haberte ayudado a encontrar un momento de paz. Vuelve cuando quieras, siempre estoy aquí.",
+        "Gracias por hacerme saber el impacto que tuvo. Recuerda que la verdadera fortaleza para ese cambio siempre estuvo en **ti**.",
+        "Es un placer. Saber que pude contribuir a mejorar tu día me anima a seguir aprendiendo y siendo más empática."
       ]
     }
   ]

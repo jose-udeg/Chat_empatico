@@ -1,29 +1,29 @@
-import streamlit as st
-import numpy as np
-import tensorflow as tf
-import json
-from nltk.stem.snowball import SnowballStemmer
-import nltk
-import pickle
-import random
+import streamlit as st # Para la interfaz gráfica
+import numpy as np # Manejo de arrays
+import tensorflow as tf # Para cargar el modelo de red neuronal
+import json # Para manejar archivos JSON
+from nltk.stem.snowball import SnowballStemmer # Para el stemming en español
+import nltk # Para tokenización de las frases
+import pickle # Para cargar datos preprocesados
+import random # Para respuestas aleatorias
 import os
 
-# --- Configuración de la Página ---
+# Configuración de la Página, título y diseño
 st.set_page_config(page_title="Avanna - Compañero Emocional", layout="wide")
 
-# Inicializar el stemmer (Español)
+# Inicializa el stemmer (Español)
 stemmer = SnowballStemmer('spanish')
 
-# --- Cargar Datos y Modelo ---
+# Carga Datos y Modelo
 try:
     with open("data.pickle", "rb") as f:
         words, labels, training, output = pickle.load(f)
-except FileNotFoundError:
+except FileNotFoundError: # Manejo de error si no se encuentra el archivo
     st.error("Error: No se encontró 'data.pickle'. Ejecuta train_model.py primero.")
     st.stop()
     
 try:
-    model = tf.keras.models.load_model('model.h5')
+    model = tf.keras.models.load_model('model.h5') # Carga el modelo entrenado
 except OSError:
     st.error("Error: No se encontró 'model.h5'. Ejecuta train_model.py primero.")
     st.stop()
@@ -33,40 +33,42 @@ with open('intents.json', encoding='utf-8') as file:
 
 # --- Funciones ---
 
-def bag_of_words(s, words):
-    bag = [0 for _ in range(len(words))]
-    s_words = nltk.word_tokenize(s, language='spanish')
-    s_words = [stemmer.stem(word.lower()) for word in s_words if word != "?"]
+def bag_of_words(s, words): # Crear la bolsa de palabras para la frase de entrada
+    bag = [0 for _ in range(len(words))] #
+    s_words = nltk.word_tokenize(s, language='spanish') # Tokeniza la frase de entrada en español
+    s_words = [stemmer.stem(word.lower()) for word in s_words if word != "?"] # Stemming y limpieza
 
     for se in s_words:
-        for i, w in enumerate(words):
+        for i, w in enumerate(words): # Recorre las palabras conocidas, por medio de comparación
             if w == se:
-                bag[i] = 1
+                bag[i] = 1 # Si la palabra está presente, marca con 1
     return np.array(bag)
 
 def chat(inp):
-    # 1. Predecir
+# Predecir la respuesta basada en la entrada del usuario
     bow = bag_of_words(inp, words)
-    results = model.predict(np.array([bow]), verbose=0)[0] 
-    results_index = np.argmax(results)
-    tag = labels[results_index]
-    probabilidad = results[results_index]
+    results = model.predict(np.array([bow]), verbose=0)[0] # Obtiene las probabilidades de cada etiqueta
+    results_index = np.argmax(results) # Índice de la etiqueta con mayor probabilidad
+    tag = labels[results_index] # Etiqueta correspondiente, basada en el índice
+    probabilidad = results[results_index] # Probabilidad asociada a la etiqueta
     
-    # --- DEBUG: Mostrar qué está pensando el robot ---
-    # Esto aparecerá en letra pequeña debajo de tu mensaje
+    # Debug para mostrar la confianza de la predicción
+    # ------------------------------------------------
+    # En letra chica, debajo del mensaje
     if probabilidad > 0.7:
         st.caption(f"✅ Entendido como: '{tag}' (Confianza: {probabilidad:.2%})")
     else:
         st.error(f"⚠️ Confianza baja: {probabilidad:.2%} (Intentó clasificar como: {tag})")
     # ------------------------------------------------
 
-    # 2. Umbral de Confianza
-    if probabilidad > 0.7:
+    # Umbral de Confianza
+    #--------------------------------
+    if probabilidad > 0.7: # Si la confianza es alta suficiente
         for tg in data['intents']:
             if tg['tag'] == tag:
-                return random.choice(tg['responses'])
+                return random.choice(tg['responses']) # Respuesta aleatoria de la etiqueta correspondiente
     
-    # 3. Manejo de lo desconocido
+    # Frases desconocidas
     else:
         # Guardar la frase desconocida
         with open("missed_queries.txt", "a", encoding='utf-8') as f:
