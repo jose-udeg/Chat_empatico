@@ -72,6 +72,11 @@ Python
     >>> nltk.download('punkt')
     >>> nltk.download('punkt_tab') # Importante para español
     >>> exit()
+import nltk
+nltk.download('punkt')
+nltk.download('punkt_tab') # Importante para español
+exit()
+
 
 5. Ejecución del Proyecto
 
