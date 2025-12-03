@@ -1,16 +1,6 @@
-<<<<<<< HEAD
-import streamlit as st
-import numpy as np
-import tensorflow as tf
-import json
 from datetime import datetime
-from nltk.stem.snowball import SnowballStemmer
-import nltk
-import pickle
-import random
 import streamlit.components.v1 as components
 import html as _html
-=======
 import streamlit as st # Para la interfaz gráfica
 import numpy as np # Manejo de arrays
 import tensorflow as tf # Para cargar el modelo de red neuronal
@@ -19,13 +9,11 @@ from nltk.stem.snowball import SnowballStemmer # Para el stemming en español
 import nltk # Para tokenización de las frases
 import pickle # Para cargar datos preprocesados
 import random # Para respuestas aleatorias
->>>>>>> 850dd76b8b48d1be531a01f953530056192dabc8
 import os
 
 # Configuración de la Página, título y diseño
 st.set_page_config(page_title="Avanna - Compañero Emocional", layout="wide")
 
-<<<<<<< HEAD
 # 2. INYECCIÓN DE CSS PERSONALIZADO (Diseño y Confianza)
 def inject_custom_css():
         st.markdown("""
@@ -163,9 +151,7 @@ def inject_custom_css():
 inject_custom_css()
 
 # Inicializar el stemmer (Español)
-=======
-# Inicializa el stemmer (Español)
->>>>>>> 850dd76b8b48d1be531a01f953530056192dabc8
+
 stemmer = SnowballStemmer('spanish')
 
 # Carga Datos y Modelo
