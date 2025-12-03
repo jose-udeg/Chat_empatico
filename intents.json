@@ -16,7 +16,16 @@
         "Hola",
         "Hey",
         "Buenas",
-        "Holi"
+        "Holi",
+        "como estas",
+        "como te va",
+        "me alegra verte",
+        "hey avanna",
+        "hola amiga",
+        "saludos",
+        "q hay",
+        "cómo andas",
+        "que onda"
       ],
       "responses": [
         "¡Hola! ¿Cómo te encuentras en este momento?",
@@ -33,7 +42,15 @@
         "estoy deprimido",
         "me siento muy mal",
         "estoy desanimado",
-        "me siento muy triste"
+        "me siento muy triste",
+        "tengo el ánimo por los suelos",
+        "no tengo ganas de nada",
+        "estoy melancólico",
+        "tengo un día gris",
+        "las cosas no van bien",
+        "me siento bajoneado",
+        "estoy con pena",
+        "tengo ganas de llorar"
       ],
       "responses": [
         "Entiendo, permítete sentir eso. ¿Quieres compartir por qué te sientes así?",
@@ -56,7 +73,11 @@
         "estoy muy contento",
         "me siento genial",
         "hoy me siento muy bien",
-        "Estoy alegre"
+        "Estoy alegre",
+        "todo me salió perfecto",
+       "estoy de buen humor",
+       "me siento optimista",
+       "me dieron una buena noticia"
       ],
       "responses": [
         "¡Me alegra mucho que te sientas así! ¿Qué te hace tan feliz?",
@@ -70,7 +91,15 @@
         "dame un consejo",
         "necesito ayuda",
         "¿qué piensas?",
-        "orientame"
+        "orientame",
+        "qué me recomiendas",
+        "dime qué hago",
+        "necesito una opinión",
+        "dame una sugerencia",
+        "cómo resuelvo esto",
+        "ayúdame a decidir",
+        "avanna dame un consejo",
+        "qué hago en esta situación avanna"
       ],
       "responses": [
         "Claro, puedo ayudarte a explorar opciones. Para empezar, ¿se trata de un problema de **relación**, de **trabajo/estudios**, o algo sobre tu **autoestima**?",
@@ -96,7 +125,11 @@
         "hasta pronto",
         "mañana nos vemos",
         "mañana hablamos",
-        "nos hablamos"
+        "nos hablamos",
+        "tengo que irme",
+        "me tengo que ir",
+        "es hora de irme",
+        "luego hablamos"
       ],
       "responses": [
         "Cuídate mucho y recuerda que estaré aquí cuando me necesites.",
@@ -114,7 +147,13 @@
         "no puedo respirar bien",
         "tengo un ataque de panico",
         "estoy asustado",
-        "me siento inquieto"
+        "me siento inquieto",
+        "me duele el pecho",
+        "estoy muy preocupado",
+        "no puedo parar de pensar",
+        "siento un nudo en el estómago",
+        "estoy hiperventilando",
+        "siento que voy a colapsar"
       ],
       "responses": [
         "Respira profundo. Estoy aquí contigo. ¿Quieres que probemos un ejercicio de respiración juntos?",
@@ -131,7 +170,14 @@
         "estoy harto",
         "tengo rabia",
         "me da mucho coraje",
-        "estoy molesto"
+        "estoy molesto",
+        "me siento traicionado",
+        "no es justo",
+        "me hierve la sangre",
+        "estoy cabreado",
+        "siento mucha ira",
+        "estoy indignado",
+        "esto me frustra mucho"
       ],
       "responses": [
         "El enojo es una emoción válida y a menudo nos dice que algo no es justo. ¿Qué es lo que te ha molestado?",
@@ -146,7 +192,11 @@
         "te lo agradezco",
         "gracias por escucharme",
         "eres muy amable",
-        "gracias por la ayuda"
+        "gracias por la ayuda",
+        "mil gracias",
+        "te lo valoro mucho",
+        "agradecida",
+        "fue de gran ayuda"
       ],
       "responses": [
         "De nada, es un placer escucharte.",
@@ -166,7 +216,11 @@
         "perdí a alguien importante",
         "tengo el alma destrozada",
         "me hace falta",
-        "es muy difícil seguir"
+        "es muy difícil seguir",
+        "no supero la pérdida",
+        "siento que no puedo más con este dolor",
+        "me siento muy solo con este dolor",
+        "la vida no tiene sentido sin esa persona"
       ],
       "responses": [
         "Lamento mucho tu dolor. Es un dolor inmenso y **tienes todo el derecho de sentirlo**. ¿Hay algo que te gustaría compartir sobre ese recuerdo?",
@@ -186,7 +240,12 @@
         "necesito amor propio",
         "valgo la pena?",
         "no me gusto",
-        "soy malo para esto"
+        "soy malo para esto",
+        "me siento inseguro",
+        "tengo baja autoestima",
+        "no sé cuidarme",
+        "creo que no valgo nada",
+        "cómo ser más seguro de mí mismo"
       ],
       "responses": [
         "**Eres un ser valioso** por el simple hecho de existir. ¿Qué diría un buen amigo sobre ti en este momento? Sé tan amable contigo como lo serías con esa persona.",
@@ -203,7 +262,12 @@
         "todo está bien",
         "me siento centrado",
         "tengo paz",
-        "me siento en mi centro"
+        "me siento en mi centro",
+        "estoy relajado",
+        "qué serenidad",
+        "me siento equilibrado",
+        "estoy en calma total",
+        "mi mente está despejada"
       ],
       "responses": [
         "¡Qué maravilloso! La paz es un hermoso estado de presencia. ¿Podrías describir **dónde sientes esa paz** en tu cuerpo en este momento?",
@@ -214,7 +278,12 @@
       "tag": "euforia",
       "patterns": [
         "estoy eufórico",
-        "siento mucha energía"
+        "siento mucha energía",
+        "estoy emocionado",
+        "estoy súper arriba",
+        "siento una felicidad extrema",
+        "estoy hiperactivo",
+        "no puedo parar de reir"
       ],
       "responses": [
         "Es genial experimentar esta energía. Recuerda **disfrutarla sin presionarte** para que dure. ¿Qué vas a hacer para honrar y usar esta buena vibra?"
