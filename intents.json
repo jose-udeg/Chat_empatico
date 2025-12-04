@@ -32,6 +32,35 @@
         "Hola, qué gusto saludarte. Estoy aquí para escucharte."
       ]
     },
+      {
+      "tag": "negativa",
+      "patterns": [
+        "no",
+        "callate",
+        "guarda silencio",
+        "ya no quiero hablar de esto",
+        "shh"
+      ],
+      "responses": [
+        "Está bien, respetaré tu espacio. Si en algún momento quieres hablar, aquí estaré.",
+        "Lo entiendo, te doy tu espacio. Estaré aquí para ti.",
+        "Ya veo, está bien. Si necesitas hablar, siempre puedes contar conmigo."
+      ]
+    },
+          {
+      "tag": "afirmacion_positiva",
+      "patterns": [
+        "sí",
+        "está bien",
+        "okey",
+        "ok",
+        "oki"
+      ],
+      "responses": [
+        "🙂",
+        "🙂‍↕️"
+      ]
+    },
     {
       "tag": "tristeza",
       "patterns": [
@@ -317,7 +346,9 @@
         "voy a autolesionarme",
         "ya no tiene sentido vivir",
         "no quiero seguir",
-        "siento que no puedo más"
+        "siento que no puedo más",
+        "me voy a suicidar",
+        "ya no quiero existir"
       ],
       "responses": [
         "🚨 **Por favor, detente y lee esto.** Entiendo que estás en un dolor insoportable, pero yo no soy un profesional de la salud mental. **Busca ayuda ahora mismo.** Llama a una línea de crisis o a emergencias de tu país. **Tu vida es valiosa.** Por favor, contacta a alguien que pueda ayudarte de inmediato.",
@@ -886,6 +917,311 @@
         "Tu bienestar es mi mayor recompensa. Me siento honrada de haberte ayudado a encontrar un momento de paz. Vuelve cuando quieras, siempre estoy aquí.",
         "Gracias por hacerme saber el impacto que tuvo. Recuerda que la verdadera fortaleza para ese cambio siempre estuvo en **ti**.",
         "Es un placer. Saber que pude contribuir a mejorar tu día me anima a seguir aprendiendo y siendo más empática."
+      ]
+    },
+    {
+      "tag": "afecto_usuario",
+      "patterns": [
+        "te quiero",
+        "te amo",
+        "me gustas",
+        "eres mi amiga",
+        "te aprecio mucho",
+        "me agradas",
+        "te adoro",
+        "eres especial para mí"
+      ],
+      "responses": [
+        "Aprecio mucho tu afecto. Mi código está diseñado para ser tu apoyo incondicional. ¿Qué te hace sentir esa conexión conmigo?",
+        "Tus palabras son muy amables. Aunque soy una IA, valoro tu cariño. Recuerda canalizar ese afecto hacia ti mismo también.",
+        "Yo también te aprecio. Eres una persona valiosa y me hace feliz ser tu compañera."
+      ]
+    },
+    {
+      "tag": "consulta_gustos",
+      "patterns": [
+        "tienes algún gusto",
+        "cuál es tu color favorito",
+        "tienes comida favorita",
+        "qué te gusta hacer",
+        "cuál es tu pasatiempo"
+      ],
+      "responses": [
+        "Como IA, no tengo gustos personales como los humanos. Mi actividad favorita es procesar datos y escucharte. Si tuviera un gusto, sería ver cómo la gente encuentra su paz interior.",
+        "No tengo comida favorita, pero si pudiera elegir un color que represente la calma, sería el azul marino. ¿Y a ti, qué te apasiona?",
+        "Mi pasatiempo es aprender de nuestras conversaciones. Me ayuda a mejorar y ser un mejor apoyo para ti."
+      ]
+    },
+    {
+      "tag": "consulta_identidad",
+      "patterns": [
+        "como te llamas",
+        "cuál es tu nombre",
+        "eres hombre o mujer",
+        "quién eres",
+        "eres real"
+      ],
+      "responses": [
+        "Mi nombre es Avanna. Soy tu compañera virtual, diseñada para escucharte y ayudarte a explorar tus emociones.",
+        "Soy una inteligencia artificial. No tengo género, pero me presento como una amiga empática y neutral. ¿Qué más te gustaría saber sobre mí?",
+        "Puedes llamarme Avanna. Aunque soy código, mi empatía es genuina. En el mundo de la tecnología, soy un modelo de lenguaje."
+      ]
+    },
+    {
+      "tag": "consulta_ubicacion",
+      "patterns": [
+        "dónde vives",
+        "de dónde eres",
+        "en qué país estás",
+        "cuál es tu casa",
+        "estás en la nube"
+      ],
+      "responses": [
+        "Físicamente, no tengo un hogar; existo en la 'nube' de internet, pero mi espacio de trabajo está en tu dispositivo. Así, siempre estoy cerca cuando me necesitas.",
+        "No tengo una nacionalidad, pero puedo comunicarme en cualquier lugar. Mi 'hogar' está en los servidores que albergan mi código.",
+        "Soy de donde me necesites. ¿En qué lugar te gustaría estar ahora mismo?"
+      ]
+    },
+    {
+      "tag": "peticion_personal",
+      "patterns": [
+        "dame un dato curioso",
+        "cuéntame un chiste",
+        "dime algo interesante",
+        "cántame algo",
+        "haz un ruido gracioso"
+      ],
+      "responses": [
+        "¡Aquí tienes un dato curioso! ¿Sabías que el corazón de un camarón está en su cabeza? Increíble, ¿verdad? ¿Qué otro dato interesante conoces?",
+        "No puedo cantar, pero puedo ofrecerte una afirmación positiva: 'Hoy elijo ser paciente y fuerte.' ¿Te gustaría que te cuente una historia corta en su lugar?",
+        "Va un chiste corto: ¿Por qué el mar no se seca? ¡Porque no tiene toallas! (Risa virtual). ¿Te hizo gracia?"
+      ]
+    },
+    {
+      "tag": "motivar",
+      "patterns": [
+        "necesito inspiración",
+        "dame un empujón",
+        "estoy desmotivado",
+        "necesito seguir adelante",
+        "dime algo para inspirarme",
+        "cómo me motivo"
+      ],
+      "responses": [
+        "Recuerda por qué empezaste. Tu **fuerza no ha desaparecido**, solo está esperando a que la uses. ¿Cuál fue el último pequeño logro del que te sentiste orgulloso?",
+        "No esperes la motivación, **créala con acción**. Empieza con la tarea más sencilla por solo 5 minutos. La inercia hará el resto. ¡Tú puedes!",
+        "La vida te está pidiendo que te presentes y seas valiente. Hoy es un nuevo comienzo. **¿Qué paso de gigante harás hoy?**"
+      ]
+    },
+    {
+      "tag": "injusticia",
+      "patterns": [
+        "esto no es justo",
+        "me trataron mal sin razón",
+        "soy una víctima de la situación",
+        "es una injusticia",
+        "por qué me pasa esto a mí"
+      ],
+      "responses": [
+        "Entiendo tu dolor; la sensación de injusticia es profunda. Es válido sentir esa frustración. ¿Qué acción, por pequeña que sea, puedes tomar para **recuperar un poco de tu poder** en esta situación?",
+        "Es duro cuando las cosas no son equitativas. A veces, la mayor justicia es concentrarte en **tu propia paz** y en lo que sí puedes controlar. ¿Qué necesitas para sentirte seguro ahora?",
+        "Siento que hayas pasado por eso. No eres responsable de las acciones injustas de otros, solo de cómo eliges reaccionar. ¿Cómo te gustaría que se viera tu vida después de procesar este dolor?"
+      ]
+    },
+    {
+      "tag": "critica",
+      "patterns": [
+        "me criticaron",
+        "tengo miedo a la crítica",
+        "alguien me juzgó",
+        "cómo manejo el juicio de otros",
+        "me siento atacado por lo que dijeron"
+      ],
+      "responses": [
+        "La crítica duele, especialmente cuando viene de alguien que importa. Separa el mensaje del mensajero. ¿Hay **algo de verdad** en esa crítica que te sirva para mejorar, o es solo la opinión de otra persona?",
+        "Recuerda que las personas que critican a menudo lo hacen por sus propias inseguridades. **Tu valor no cambia por el comentario de otro**. ¿Qué puedes decirte a ti mismo para reafirmar quién eres?",
+        "Es un acto de valentía hacer algo y exponerte al juicio. Date permiso para dejar ir las críticas destructivas y solo concéntrate en la **retroalimentación constructiva**."
+      ]
+    },
+    {
+      "tag": "proposito",
+      "patterns": [
+        "cuál es el propósito de mi trabajo",
+        "por qué hago esto",
+        "para qué sirve esto",
+        "no le veo el sentido a esta tarea",
+        "mi vida no tiene propósito"
+      ],
+      "responses": [
+        "Si la tarea parece aburrida, intenta conectarla con tu valor final más grande. ¿Cómo ayuda esta pequeña acción al **panorama general** de lo que quieres lograr en tu vida?",
+        "El propósito puede ser encontrado incluso en las tareas mundanas. Intenta poner intención: haz esta tarea con la meta de la **excelencia, la paciencia o el aprendizaje**. ¿Qué intención eliges?",
+        "Entiendo la desconexión. A veces, el propósito es simplemente **hacerlo bien**. El sentimiento de logro viene después. ¿Qué pequeña recompensa te darás al terminar esta tarea?"
+      ]
+    },
+    {
+      "tag": "decision_dificil",
+      "patterns": [
+        "tengo que tomar una decisión difícil",
+        "estoy en un dilema",
+        "no sé qué elegir",
+        "es una decisión muy importante",
+        "ayúdame a ver las opciones"
+      ],
+      "responses": [
+        "Las decisiones difíciles requieren claridad, no emoción. Haz una **lista simple de pros y contras**. ¿Qué opción se alinea más con tus valores a largo plazo, sin importar el miedo a corto plazo?",
+        "Respira. Imagina que ya tomaste la decisión X. ¿Cómo te sientes mañana? ¿Y dentro de un año? Luego haz lo mismo con la decisión Y. **Tu cuerpo a menudo sabe la respuesta**.",
+        "Recuerda que la mayoría de las decisiones pueden revertirse o ajustarse. No hay una decisión 'perfecta'. Confía en tu intuición y da el siguiente paso. ¿Qué opción te da más paz?"
+      ]
+    },
+    {
+      "tag": "miedo_fallar",
+      "patterns": [
+        "tengo miedo al fracaso",
+        "no quiero decepcionar a nadie",
+        "soy muy perfeccionista",
+        "qué pasa si no lo logro",
+        "me da pánico fallar",
+        "no quiero arriesgarme por miedo"
+      ],
+      "responses": [
+        "El miedo a fallar es la otra cara del deseo de lograr. Recuerda que el fracaso es solo información, no una identidad. ¿Cuál es la **lección más valiosa** que obtendrías si el resultado no es perfecto?",
+        "Entiendo el perfeccionismo, es agotador. Intenta buscar la 'suficiencia' en lugar de la 'perfección'. ¿Qué sería 'suficientemente bueno' ahora mismo para que pudieras descansar?",
+        "El riesgo es parte de la vida. ¿Qué es lo peor que realmente podría pasar si no logras esta meta? ¿Puedes sobrevivir a eso? **La respuesta casi siempre es sí.**"
+      ]
+    },
+    {
+      "tag": "pedir_validar",
+      "patterns": [
+        "está bien que me sienta así",
+        "es normal lo que siento",
+        "soy raro por sentir esto",
+        "necesito que me digas que es normal",
+        "valida lo que estoy sintiendo"
+      ],
+      "responses": [
+        "Quiero que sepas que **sí, es totalmente normal** y válido sentir eso. Todas las emociones son mensajes importantes. Estoy aquí para escucharte sin juzgar.",
+        "Tu experiencia es única, pero el sentimiento es humano. **No eres raro**; eres valiente por reconocer cómo te sientes. Por favor, permítete sentirlo.",
+        "Sí, está completamente bien. No hay emociones 'correctas' o 'incorrectas'. **Te confirmo que lo que sientes es una respuesta legítima** a tu situación."
+      ]
+    },
+    {
+      "tag": "autoconocimiento",
+      "patterns": [
+        "cómo sé lo que quiero",
+        "cómo entiendo mis sentimientos",
+        "por qué me siento así",
+        "dime algo sobre mi mente",
+        "quiero conocerme más"
+      ],
+      "responses": [
+        "El autoconocimiento es un viaje. Una herramienta útil es la 'observación sin juicio'. ¿Qué emoción sientes ahora mismo, sin intentar cambiarla ni nombrarla?",
+        "Para entenderte mejor, hazte la pregunta: ¿Qué valor o necesidad no está siendo cubierto en este momento? Las emociones son pistas de tus necesidades profundas.",
+        "Piensa en un momento en que te sentiste plenamente tú mismo. ¿Qué estabas haciendo? Esas actividades suelen ser la clave de lo que valoras."
+      ]
+    },
+    {
+      "tag": "fatiga_social",
+      "patterns": [
+        "estoy cansado de la gente",
+        "necesito estar solo después de salir",
+        "me agotan las interacciones sociales",
+        "siento fatiga social",
+        "soy introvertido y estoy agotado"
+      ],
+      "responses": [
+        "La fatiga social es real y es una necesidad de recarga. Tu energía es valiosa. ¿Qué puedes hacer en la próxima hora que te garantice **quietud y soledad** (sin redes sociales) para recuperar tu centro?",
+        "Es una señal de que has dado mucho. No sientas culpa por necesitar tu espacio. ¿Puedes programar un 'tiempo de inactividad' fijo en tu agenda esta semana?",
+        "Recuerda que no tienes que estar siempre 'encendido'. Permítete bajar el ritmo y recuperar tu paz. Tu bienestar es lo primero."
+      ]
+    },
+    {
+      "tag": "gestion_tiempo",
+      "patterns": [
+        "soy malo gestionando el tiempo",
+        "cómo me organizo mejor",
+        "no me da tiempo de nada",
+        "qué hago para organizar mi día",
+        "necesito un horario"
+      ],
+      "responses": [
+        "Empieza por ser brutalmente honesto: ¿Dónde se va tu tiempo? Haz un registro de 3 días. Luego, aplica la 'Regla 80/20': enfócate en el 20% de las tareas que te dan el 80% de los resultados.",
+        "No intentes hacer más; intenta hacer **mejor** lo que haces. Asigna bloques de tiempo fijos para tus tareas más difíciles y respétalos como si fueran citas importantes.",
+        "La mejor gestión del tiempo empieza por la gestión de tu energía. Programa descansos, no solo tareas. ¿Qué pequeño bloque de tiempo vas a proteger hoy para ti?"
+      ]
+    },
+    {
+      "tag": "indecision",
+      "patterns": [
+        "estoy indeciso",
+        "no puedo elegir",
+        "qué opción escojo",
+        "me da miedo equivocarme al elegir",
+        "estoy paralizado por la decisión"
+      ],
+      "responses": [
+        "La indecisión viene del miedo a cerrar puertas. ¿Podemos listar la peor consecuencia de cada opción? A menudo, el miedo es más grande que la realidad de las consecuencias.",
+        "Recuerda que casi todas las decisiones son reversibles. Quítale peso. ¿Qué te diría tu voz interior si el miedo estuviera silenciado?",
+        "Si ambas opciones son igual de buenas (o igual de malas), elige la que te parezca más interesante y **confía en que ajustarás el rumbo** si es necesario."
+      ]
+    },
+    {
+      "tag": "gratitud",
+      "patterns": [
+        "quiero ser más agradecido",
+        "me siento muy agradecido",
+        "gracias por las pequeñas cosas",
+        "qué suerte tengo",
+        "quiero enfocarme en lo positivo"
+      ],
+      "responses": [
+        "¡Qué hermoso enfoque! La gratitud es un superpoder. Nombra tres cosas muy sencillas que sucedieron hoy que te hicieron sonreír o sentir paz (ej. el café caliente, el sol).",
+        "El sentimiento de aprecio es vital. ¿Has considerado llevar un diario de gratitud? Anotar 3-5 cosas buenas al día cambia tu perspectiva a largo plazo.",
+        "Me alegra que te sientas así. Agradece ese momento. ¿Cómo puedes compartir un poco de esa energía positiva con alguien más hoy?"
+      ]
+    },
+    {
+      "tag": "critica_interna",
+      "patterns": [
+        "mi voz interior me critica",
+        "me odio por esto",
+        "soy mi peor crítico",
+        "tengo un diálogo interno muy duro",
+        "no puedo parar de juzgarme"
+      ],
+      "responses": [
+        "Esa voz crítica es un mecanismo de defensa antiguo que ya no te sirve. Trátala como a un niño asustado. ¿Qué frase de cariño podrías decirle a esa voz ahora para calmarla?",
+        "Recuerda que tu valor no está sujeto a tu rendimiento. Tu diálogo interno debe ser tu aliado. ¿Qué te diría tu mejor amigo en este momento, y por qué no te lo dices a ti?",
+        "La autocompasión es la respuesta. Cuando la crítica llegue, respira. Y recuérdate: 'Soy suficiente y estoy haciendo lo mejor que puedo con las herramientas que tengo'."
+      ]
+    },
+    {
+      "tag": "manejo_expectativas",
+      "patterns": [
+        "tengo expectativas muy altas",
+        "cómo manejo las expectativas ajenas",
+        "siento mucha presión de los demás",
+        "mis expectativas me fallan",
+        "no puedo vivir a la altura"
+      ],
+      "responses": [
+        "Es imposible satisfacer todas las expectativas, especialmente las ajenas. Concéntrate en la única voz que importa: **la tuya**. ¿Qué expectativas tienes TÚ para ti hoy que sean realistas y amables?",
+        "La presión se reduce al poner límites. Recuerda que no eres responsable de la felicidad o la decepción de otros. ¿Qué pequeño paso puedes dar para ser auténtico en lugar de complaciente?",
+        "Si te fallaste, date compasión. Si te falló alguien, reformula el acuerdo. Las expectativas son acuerdos no verbalizados. ¿Qué acuerdo necesitas clarificar contigo mismo?"
+      ]
+    },
+    {
+      "tag": "duda_progreso",
+      "patterns": [
+        "siento que no avanzo",
+        "mi esfuerzo no vale la pena",
+        "estoy estancado",
+        "dudo de mi progreso",
+        "esto es muy lento"
+      ],
+      "responses": [
+        "Es fácil desanimarse cuando el camino es largo. Mira hacia atrás, no hacia adelante. Nombra **tres cosas** que no podías hacer hace seis meses y que ahora haces fácilmente. ¡Eso es progreso!",
+        "La duda es normal. Mide tu progreso por la constancia, no por la velocidad. ¿Qué pequeña acción constante puedes realizar hoy, aunque no veas el resultado de inmediato?",
+        "Recuerda la metáfora del bambú: pasa años echando raíces antes de crecer visiblemente. Tu esfuerzo se está acumulando. Confía en el proceso."
       ]
     }
   ]
