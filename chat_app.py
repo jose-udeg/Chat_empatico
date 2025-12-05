@@ -14,7 +14,7 @@ import os
 # Configuración de la Página, título y diseño
 st.set_page_config(page_title="Avanna - Compañero Emocional", layout="wide")
 
-# 2. INYECCIÓN DE CSS PERSONALIZADO (Diseño y Confianza)
+# INYECCIÓN DE CSS PERSONALIZADO (Diseño y Confianza)
 def inject_custom_css():
         st.markdown("""
         <style>
@@ -216,7 +216,7 @@ def chat(inp):
             
         return "Siento que no estoy entendiendo del todo. ¿Podrías intentar explicármelo con otras palabras?"
 
-# --- Interfaz de la Barra Lateral ---
+# --- Interfaz Gráfica (Amigable) ---
 with st.sidebar:
     st.image("https://img.icons8.com/color/96/000000/heart-with-pulse.png", width=60) # Ícono visual de apoyo
     st.title("💖 Avanna: Tu Compañero de Bienestar")
@@ -240,8 +240,6 @@ with st.container(border=True):
     
 st.divider()
 
-# --- CÓDIGO CORREGIDO para _build_bubble_html ---
-
 def _build_bubble_html(role, content, ts, allow_html=False):
     # 1. Normalizar y escapar el contenido para seguridad (XSS)
     content_safe = ' '.join(content.replace('\r', ' ').replace('\n', ' ').split())
@@ -257,26 +255,22 @@ def _build_bubble_html(role, content, ts, allow_html=False):
     row_class = 'message-row assistant' if role == 'assistant' else 'message-row user'
     bubble_class = 'bubble assistant' if role == 'assistant' else 'bubble user'
     
-    # 2. Inyectamos estilos en línea en la burbuja del USUARIO
+    # Inyectamos estilos en línea en la burbuja del USUARIO
     if role == 'user':
         # Añadimos un estilo inline que fuerza el texto a no romperse
-        bubble_class += " force-inline-text" # Clase CSS que definiremos abajo
+        bubble_class += " force-inline-text"
 
     if role == 'assistant':
         return f"<div class='{row_class}'><div class='avatar assistant'>{avatar}</div><div><div class='{bubble_class}'>{content}</div><div class='meta'>{ts}</div></div></div>"
     else:
-        # El HTML del usuario está bien: flex-end lo mantiene a la derecha
         return f"<div class='{row_class}'><div class='{bubble_class}'>{content}</div><div class='meta'>{ts}</div></div><div class='avatar user'>{avatar}</div></div>"
 
-# Initialize incremental chat buffer and placeholder
 if 'chat_body' not in st.session_state:
-    # chat_body will store bubble HTML strings
     st.session_state.chat_body = []
 
 if 'chat_placeholder' not in st.session_state:
     st.session_state.chat_placeholder = st.empty()
 
-# Ensure messages are initialized and transferred to chat_body once
 if 'messages' not in st.session_state:
     st.session_state.messages = [{"role": "assistant", "content": "Bienvenido/a. ¿Cómo te sientes en este momento? Estoy aquí para ti.", "time": datetime.now().strftime('%H:%M')}]
 
@@ -288,32 +282,26 @@ def _render_chat_placeholder():
     prefix = '<div class="chat-card"><div class="chat-window">'
     suffix = '</div></div>'
     html = prefix + ''.join(st.session_state.chat_body) + '<div id="end"></div>' + suffix
-    # Use markdown in placeholder to render HTML; this updates only the placeholder
     st.session_state.chat_placeholder.markdown(html, unsafe_allow_html=True)
 
 # Initial render
 _render_chat_placeholder()
 
-# Entrada de chat (Texto de entrada más abierto)
+# Entrada de chat 
 if prompt := st.chat_input("¿Cómo te sientes hoy? Estoy lista para escucharte..."):
     now = datetime.now().strftime('%H:%M')
-    # Append user bubble immediately (fast feedback)
     user_html = _build_bubble_html('user', prompt, now)
     st.session_state.chat_body.append(user_html)
     _render_chat_placeholder()
 
-    # Append a temporary typing indicator for assistant
     typing_id = len(st.session_state.chat_body)
     typing_html = _build_bubble_html('assistant', '<i>Escribiendo...</i>', '')
     st.session_state.chat_body.append(typing_html)
     _render_chat_placeholder()
 
-    # Compute AI response (may take time) and then replace typing indicator
     response = chat(prompt)
     assistant_html = _build_bubble_html('assistant', response, datetime.now().strftime('%H:%M'))
-    # Replace the typing bubble
     st.session_state.chat_body[typing_id] = assistant_html
-    # Also append to messages store
     st.session_state.messages.append({"role": "user", "content": prompt, "time": now})
     st.session_state.messages.append({"role": "assistant", "content": response, "time": datetime.now().strftime('%H:%M')})
     _render_chat_placeholder()
